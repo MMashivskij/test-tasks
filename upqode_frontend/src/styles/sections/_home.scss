@@ -1,0 +1,134 @@
+.homeContainer {
+    position: relative;
+}
+
+.homeSlider {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    // position: relative;
+
+    &__item {
+        position: relative;
+        display: block;
+        width: inherit;
+        height: inherit;
+        
+        &_content {
+            width: 52.5vw;
+            position: absolute;
+            top: 33.33vh;
+            left: 23.75vw;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            &_header {
+                font-size: 90px;
+                line-height: 100px;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+    
+            &_text {
+                font-size: 18px;
+                line-height: 32px;
+                text-align: center;
+                margin-bottom: 54px;
+                letter-spacing: 0.2px;
+            }
+    
+            &_button {
+                width: 172px;
+                height: 54px;
+                background-color: #00a031;
+                border-radius: 27px;
+                color: #F4FBF6;
+                font-family: 'Gilroy', sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0.1px;
+                cursor: pointer;
+            }
+        }        
+    }
+    
+    &__button_left {
+        height: 44px;
+        width: 24px;
+        position: absolute;
+        top: 44.53vh;
+        left: 8.85vw;
+        background-image: url(./../images/Vector_left.svg);
+        background-repeat: no-repeat;
+        background-position: center;      
+        background-color: rgba(255, 255, 255, 0);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__button_right {
+        height: 44px;
+        width: 24px;
+        position: absolute;
+        top: 44.53vh;
+        left: 91.15vw;
+        background-image: url(./../images/Vector_right.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-color: rgba(0, 0, 0, 0);
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}
+
+.carousel {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    transform: translateX();
+} 
+
+.carousel__dots-container {
+    position: absolute;
+    bottom: 10.36vh;
+    width: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: calc(50vw - 35px);
+}
+
+.carousel__dot {
+    width: 13px;
+    height: 13px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+// .carousel__dot_active {
+// }
+
+.carousel__dot_active {
+    border: 1px solid #00A031;
+    border-radius: 50%;
+
+    & > div {
+        background-color: #00A031;
+        margin: 3px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./images/logo.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" rel="stylesheet"> <!--Font-family "Poppins"-->
+    <link rel="author" href="#"> <!--Who's author?-->
+    <link rel="license" href="#"> <!--Copyright information-->
+    <link rel="help" href="#"> <!--Help document-->
+
+    <link rel="stylesheet" href="./styles/main.css" type="text/css"> <!--Import styles-->
+    <script src="./scripts/active_link.js" defer></script>
+    <script src="./scripts/home_slider.js" defer></script>
+    <script src="./scripts/team_slider.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__upqode">
+        <img class="header__upqode_image" src="./images/logo.png" alt="logo">
+        <span class="header__upqode_text">upqode</span>
+      </div>
+      <div class="menu-container">
+        <label class="toggle-lable" for="toggle" onclick=`${console.log(111)}`>&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <nav class="header__menu" onclick="activeLink(event.target)">
+          <a class="activ-link header__menu_link" href="#Home">home</a>
+          <a class="header__menu_link" href="#Services">services</a>
+          <a class="header__menu_link" href="#Team">team</a>
+          <a class="header__menu_link" href="#ContactUs">contact us</a>
+        </nav>  
+      </div>
+    </header>
+    <section class="home" id="Home">
+      <div class="homeContainer">
+        <div class="homeSlider">
+          <ul class="carousel">
+            <li class="slider__item">
+              <video src="./video/coverr-aerial-view-of-rocky-mountains-1585320758193.mp4" autoplay muted loop></video>
+              <div class="homeSlider__item_content">
+                <span class="homeSlider__item_content_header">Mileage Made Simple</span>
+                <span class="homeSlider__item_content_text">Motivation And Your Personal Vision An Unbeatable Force</span>
+                <button class="homeSlider__item_content_button" type="button">Start Free Trial</button>
+              </div>
+            </li>
+            <li class="homeSlider__item">
+              <video src="./video/coverr-car-in-desert-1585317576189.mp4" autoplay muted loop></video>
+              <div class="homeSlider__item_content">
+                <span class="homeSlider__item_content_header">In Desert</span>
+                <span class="homeSlider__item_content_text">Motivation And Your Personal Vision An Unbeatable Force</span>
+                <button class="homeSlider__item_content_button" type="button">Start Free Trial</button>
+              </div>
+            </li>
+            <li class="homeSlider__item">
+              <video src="./video/coverr-mountain-lake-1572171891276.mp4" autoplay muted loop></video>
+              <div class="homeSlider__item_content">
+                <span class="homeSlider__item_content_header">Lake</span>
+                <span class="homeSlider__item_content_text">Motivation And Your Personal Vision An Unbeatable Force</span>
+                <button class="homeSlider__item_content_button" type="button">Start Free Trial</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="homeSlider__button_left"></button>
+        <button class="homeSlider__button_right"></button>
+        <div class="carousel__dots-container">
+          <div class="carousel__dot">
+            <div></div>
+          </div>
+          <div  class="carousel__dot">
+            <div></div>
+          </div>
+          <div class="carousel__dot">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Services">Services</section>
+    <section class="team" id="Team">
+      <div class="team__container">
+        <div class="team__member">
+          <div class="team__member_info">
+            <div class="team__member_info_name">Anthony Stark</div>
+            <div class="team__member_info_position">Iron Man</div>
+            <div class="team__member_info_description">
+              A fictional character portrayed by Robert Downey Jr. in the Marvel Cinematic Universe (MCU) 
+              film franchise—based on the Marvel Comics character of the same name—commonly known by his alter ego, 
+              Iron Man.
+            </div>
+            <div name="team__member_socials">
+              <ul class="team__member_socials">
+                <li>
+                  <a class="team__member_socials_link" href="#">facebook</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">linkedin</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="team__member_info">
+            <div class="team__member_info_name">Thor Odinson</div>
+            <div class="team__member_info_position">Demigod</div>
+            <div class="team__member_info_description">
+              A fictional character portrayed by Chris Hemsworth in the Marvel Cinematic Universe (MCU) film franchise, 
+              based on the Marvel Comics character of the same name. In the films, Thor is one of the most powerful of 
+              the Asgardians, an alien civilization with long ties to Earth, who are therefore considered on Earth to be gods.
+            </div>
+            <div name="team__member_socials">
+              <ul class="team__member_socials">
+                <li>
+                  <a class="team__member_socials_link" href="#">facebook</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">linkedin</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="team__member_info">
+            <div class="team__member_info_name">Hulk</div>
+            <div class="team__member_info_position">Green giant</div>
+            <div class="team__member_info_description">
+              A 2003 American superhero film based on the fictional Marvel Comics character of the same name. 
+              It was directed by Ang Lee and written by James Schamus, Michael France, and John Turman, 
+              from a story by Schamus.
+            </div>
+            <div name="team__member_socials">
+              <ul class="team__member_socials">
+                <li>
+                  <a class="team__member_socials_link" href="#">facebook</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">linkedin</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="team__slider">
+          <div class="team__slider_button">
+            <div class="team__slider_button_image" id='buttonNext'>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg/220px-Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg" alt="#">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg" alt="">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSm-eIW1Vu9V2U8oWQ_xC41fnIMbeQrfq7uCoqd5t6t3DH7eR7zDsKkriQ4&usqp=CAU&ec=45668930" alt="">
+            </div>
+            <div class="team__slider_button_description_next">
+              <div>
+                <span class="team__slider_button_next">next</span>
+                <span class="team__slider_button_arrow">&rarr;</span>
+              </div>
+              <div class="team__slider_button_name_next">
+                Anthony Stark
+              </div>
+            </div>  
+          </div>
+          <div class="team__slider_button">
+            <div class="team__slider_button_description_prev">
+              <div>
+                <span class="team__slider_button_arrow">&larr;</span>
+                <span class="team__slider_button_prev">previous</span>
+              </div>
+              <div class="team__slider_button_name_prev">
+              </div>
+            </div>
+            <div class="team__slider_button_image" id='buttonPrev'>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg/220px-Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg" alt="#">
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg" alt="">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSm-eIW1Vu9V2U8oWQ_xC41fnIMbeQrfq7uCoqd5t6t3DH7eR7zDsKkriQ4&usqp=CAU&ec=45668930" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <picture class="team__photos">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg/220px-Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg" alt="">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSm-eIW1Vu9V2U8oWQ_xC41fnIMbeQrfq7uCoqd5t6t3DH7eR7zDsKkriQ4&usqp=CAU&ec=45668930" alt="">
+      </picture>
+    </section>
+    <section id="ContactUs">Contsct Us</section>
+    <footer class="footer">
+      <div class="footer__upqode">
+        <img class="footer__upqode_image" src="./images/logo.png" alt="logo">
+        <span class="footer__upqode_text">upqode</span>
+      </div>
+      <div class="menu-container">
+        <nav class="footer__menu">
+          <a class="footer__menu_link" href="#Home">home</a>
+          <a class="footer__menu_link" href="#Services">services</a>
+          <a class="footer__menu_link" href="#Team">team</a>
+          <a class="footer__menu_link" href="#ContactUs">contact us</a>
+        </nav>  
+      </div>
+      <div class="license">© UpQode 2019.  All Right Reserved.</div>
+    </footer>
+  </body>
+</html>

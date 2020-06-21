@@ -1,0 +1,52 @@
+.footer {
+    background-color: #222222;
+    text-align: -webkit-center;
+    height: 17.92vw;
+    padding: 0 37.24vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__upqode {
+        &_image {
+            margin-right: 13px;
+            width: 44px;
+            height: 44px;
+        }
+    
+        &_text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 32px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+
+    &__menu {
+        width: 25.52vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &_link {
+            font-family: 'Gilroy', sans-serif;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 3px;
+            color: #777;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+    }
+}
+
+.license {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #777;
+}
