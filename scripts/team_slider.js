@@ -53,8 +53,7 @@ const buttonNextDescription = teamSlider.querySelector(
 const buttonPrevDescription = teamSlider.querySelector(
   '.team__slider_button_description_prev'
 );
-buttonNextImage.setAttribute('src', teamArray[teamCounter].photo);
-buttonPrevImage.setAttribute('src', '');
+buttonNextImage.src = teamArray[teamCounter].photo;
 
 buttonNextImage.addEventListener('click', nextRunner);
 buttonPrevImage.addEventListener('click', prevRunner);
