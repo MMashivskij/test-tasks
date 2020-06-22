@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>upqode_frontend</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="./images/logo.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet"> <!--Font-family "Poppins"-->
+    <link rel="author" href="#"> <!--Who's author?-->
+    <link rel="license" href="#"> <!--Copyright information-->
+    <link rel="help" href="#"> <!--Help document-->
+
+    <link rel="stylesheet" href="./styles/main.css" type="text/css"> <!--Import styles-->
+    <script src="./scripts/header_active_link.js" defer></script>
+    <script src="./scripts/bunner_slider.js" defer></script>
+    <script src="./scripts/team_slider.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__upqode">
+        <img class="header__upqode_image" src="./images/logo.png" alt="logo">
+        <span class="header__upqode_text">upqode</span>
+      </div>
+      <div class="menu-container">
+        <label class="toggle-lable" for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <nav class="header__menu" onclick="activeLink(event.target)">
+          <a class="activ-link header__menu_link" href="#bunner">bunner</a>
+          <a class="header__menu_link" href="#Services">services</a>
+          <a class="header__menu_link" href="#Bunner">team</a>
+          <a class="header__menu_link" href="#ContactUs">contact us</a>
+        </nav>
+      </div>
+    </header>
+    <section class="bunner" id="Bunner">
+      <div class="bunner__slider">
+        <video class="bunner__slider_video" autoplay muted loop></video>
+        <button class="bunner__slider_button-left"></button>
+        <button class="bunner__slider_button-right"></button>
+        <div class="bunner__slider_container">
+          <div class="bunner__slider_content">
+            <span class="bunner__slider_content_header">Mileage Made Simple</span>
+            <span class="bunner__slider_content_text">Motivation And Your Personal Vision An Unbeatable Force</span>
+            <button class="bunner__slider_content_button" type="button">Start Free Trial</button>
+          </div>
+          <div class="bunner__slider_dots-container">
+            <div class="bunner__slider_dot">
+              <div></div>
+            </div>
+            <div class="bunner__slider_dot">
+              <div></div>
+            </div>
+            <div class="bunner__slider_dot">
+              <div></div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="Services">Services</section>
+    <section class="team" id="Team">
+      <div class="team__wrap">
+        <div class="team__container">
+          <div class="team__member">
+            <div class="team__member_name"></div>
+            <div class="team__member_position"></div>
+            <div class="team__member_description"></div>
+            <div name="team__member_socials">
+              <ul class="team__member_socials">
+                <li>
+                  <a class="team__member_socials_link" href="#">facebook</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">linkedin</a>
+                </li>
+                <li>
+                  <a class="team__member_socials_link" href="#">twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="team__slider">
+            <div class="team__slider_button">
+              <img class="team__slider_button_image" id="buttonNext" alt="">
+              <div class="team__slider_button_description_next">
+                <div>
+                  <span class="team__slider_button_next">next</span>
+                  <span class="team__slider_button_arrow">&rarr;</span>
+                </div>
+                <div class="team__slider_button_name_next">
+                  Anthony Stark
+                </div>
+              </div>
+            </div>
+            <div class="team__slider_button">
+              <div class="team__slider_button_description_prev">
+                <div>
+                  <span class="team__slider_button_arrow">&larr;</span>
+                  <span class="team__slider_button_prev">previous</span>
+                </div>
+                <div class="team__slider_button_name_prev">
+                </div>
+              </div>
+              <img class="team__slider_button_image" id="buttonPrev" alt="">
+            </div>
+          </div>
+        </div>
+        <picture class="team__photos">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg/220px-Robert_Downey_Jr._as_Iron_Man_in_Avengers_Infinity_War.jpg" alt="">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Chris_Hemsworth_as_Thor.jpg/220px-Chris_Hemsworth_as_Thor.jpg" alt="">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSm-eIW1Vu9V2U8oWQ_xC41fnIMbeQrfq7uCoqd5t6t3DH7eR7zDsKkriQ4&usqp=CAU&ec=45668930" alt="">
+        </picture>
+      </div>
+    </section>
+    <section id="ContactUs">Contsct Us</section>
+    <footer class="footer">
+      <div class="footer__upqode">
+        <img class="footer__upqode_image" src="./images/logo.png" alt="logo">
+        <span class="footer__upqode_text">upqode</span>
+      </div>
+      <div class="menu-container">
+        <nav class="footer__menu">
+          <a class="footer__menu_link" href="#bunner">bunner</a>
+          <a class="footer__menu_link" href="#Services">services</a>
+          <a class="footer__menu_link" href="#Team">team</a>
+          <a class="footer__menu_link" href="#ContactUs">contact us</a>
+        </nav>
+      </div>
+      <div class="license">© UpQode 2019.  All Right Reserved.</div>
+    </footer>
+  </body>
+</html>
