@@ -45,15 +45,13 @@ const teamSlider = document.querySelector('.team__slider');
 
 const buttonNextImage = teamSlider.querySelector('#buttonNext');
 const buttonPrevImage = teamSlider.querySelector('#buttonPrev');
-// const buttonNextImages = buttonNext.querySelectorAll('img');
-// const buttonPrevImages = buttonPrev.querySelectorAll('img');
 const buttonNextDescription = teamSlider.querySelector(
   '.team__slider_button_description_next'
 );
 const buttonPrevDescription = teamSlider.querySelector(
   '.team__slider_button_description_prev'
 );
-buttonNextImage.src = teamArray[teamCounter].photo;
+buttonNextImage.src = teamArray[teamCounter + 1].photo;
 
 buttonNextImage.addEventListener('click', nextRunner);
 buttonPrevImage.addEventListener('click', prevRunner);
@@ -106,11 +104,11 @@ function next() {
   }
 
   if (teamCounter === teamArray.length - 1) {
-    buttonNextImage.src = '';
+    buttonNextImage.src = '#';
     buttonNextImage.removeEventListener('click', nextRunner);
     buttonNextDescription.style.opacity = 0.6;
   } else {
-    buttonNextImage.src = teamArray[teamCounter].photo;
+    buttonNextImage.src = teamArray[teamCounter + 1].photo;
     teamSliderButtonNameNext.textContent = teamArray[teamCounter + 1].name;
   }
   teamSliderButtonNamePrev.textContent = teamArray[teamCounter - 1].name;
@@ -151,7 +149,7 @@ function prev() {
     teamSliderButtonNamePrev.textContent = null;
     buttonPrevImage.removeEventListener('click', prevRunner);
     buttonPrevDescription.style.opacity = 0.6;
-    buttonPrevImage.src = '';
+    buttonPrevImage.src = '#';
   } else {
     buttonPrevImage.src = teamArray[teamCounter - 1].photo;
     teamSliderButtonNamePrev.textContent = teamArray[teamCounter - 1].name;
