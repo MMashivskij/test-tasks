@@ -154,6 +154,10 @@ section {
   letter-spacing: 0.2px;
   color: #777; }
 
+@media screen and (max-width: 1600px) {
+  .footer__menu {
+    width: 45vw; } }
+
 @media screen and (max-width: 1024px) {
   .footer__menu {
     width: 78vw; } }
