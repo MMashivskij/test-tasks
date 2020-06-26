@@ -69,4 +69,3 @@ window.addEventListener('scroll', function() {
 window.addEventListener('click', function() {
   video.play();
 });
-
