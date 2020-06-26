@@ -128,7 +128,7 @@ section {
     color: #fff;
     text-transform: uppercase; }
   .footer__menu {
-    width: 25.52vw;
+    width: 490px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,10 +153,6 @@ section {
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #777; }
-
-@media screen and (max-width: 1600px) {
-  .footer__menu {
-    width: 45vw; } }
 
 @media screen and (max-width: 1024px) {
   .footer__menu {
